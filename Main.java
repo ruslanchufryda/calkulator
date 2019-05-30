@@ -16,11 +16,18 @@ public class Main {
         Scanner num2 = new Scanner(System.in);
         number2 = Double.parseDouble( num2.nextLine());
 
+
         System.out.println("Виберіть дію */+-");
         Scanner num3 = new Scanner(System.in);
-        dia = num3.nextLine();3
+        dia = num3.nextLine();
 
-        if (dia.equals("+")) {
+
+        if (dia.equals("/") && number2 == 0) {
+            System.out.println("Ділити на 0 не можна");
+        return;}
+
+
+         if (dia.equals("+")) {
              rezultat = number1 + number2;
         }else if(dia.equals("-")){
             rezultat = number1 - number2;
